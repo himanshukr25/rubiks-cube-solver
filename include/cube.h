@@ -14,12 +14,16 @@ class Cube {
 private:
     char face[6][3][3];
 
+    void rotateFaceClockwise(Face f);
+
 public:
     Cube();
 
     void display() const;
 
     bool isSolved() const;
+
+    void moveU();
 };
 
 #endif

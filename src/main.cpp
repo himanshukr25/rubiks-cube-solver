@@ -6,12 +6,21 @@ using namespace std;
 int main() {
     Cube cube;
 
+    cout << "Initial cube:\n";
+    cube.display();
+
+    cube.moveU();
+    cube.moveU();
+    cube.moveU();
+    cube.moveU();
+
+    cout << "\nAfter U U U U:\n";
     cube.display();
 
     if (cube.isSolved()) {
-        cout << "Cube is solved!\n";
+        cout << "\nTest PASSED: Cube returned to solved state.\n";
     } else {
-        cout << "Cube is not solved.\n";
+        cout << "\nTest FAILED: Cube is not solved.\n";
     }
 
     return 0;
